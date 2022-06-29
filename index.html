@@ -12,31 +12,37 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <!--Fin-->
     <!--CSS-->
     <link rel="stylesheet" href="./assets/style/style.css" />
+    <!--Fin-->
   </head>
   <body>
-    <div class="container">
+    <div class="container-site">
       <div class="card" style="width: 18rem">
-        <img src="..." class="card-img-top" alt="..." />
+        <img src="./assets/img/Note.png" class="card-img-top" alt="..." />
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+          <h5 class="card-title">Laptop Gamer Intel + Smartphone</h5>
+          <div class="inputs-container">
+              <input class="inputs-decoration" placeholder="Cantidad"></input>
+              <select class="inputs-decoration"  id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>Black</option>
+                <option>Blue</option>
+                <option>Silver</option>
+                <option>White</option>
+              </select>
+          </div>
+          <h3 >Precio: 320.000</h3>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-        </ul>
-        <div class="card-body">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+        <div class="card-bottom">
+          <button onclick="probando()">Calcular Total</button>
         </div>
+      </div>
+      <div class="results">
+        <p>Total: <span id="total"></span></p>
+        <p>Cantidad: <span id="quantity"></span></p>
+        <p>Color: <span class="border-form" id="border-color">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
       </div>
     </div>
 
