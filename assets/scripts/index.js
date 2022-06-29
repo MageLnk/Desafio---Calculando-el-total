@@ -1,4 +1,4 @@
-let productQuantity = 0;
+let quantityOfProducts = 0;
 let price = 320000;
 let colorSelected = undefined;
 
@@ -9,13 +9,13 @@ const multiplyProducts = (price, quantity) => {
 };
 
 const probando = () => {
-  productQuantity = parseInt(
+  quantityOfProducts = parseInt(
     document.getElementById("quantity-products").value
   );
-  const total = multiplyProducts(price, productQuantity);
+  const total = multiplyProducts(price, quantityOfProducts);
 
   document.getElementById("total").innerHTML = total;
-  document.getElementById("quantity").innerHTML = productQuantity;
+  document.getElementById("quantity").innerHTML = quantityOfProducts;
   document.getElementById("quantity-products").value = "";
 
   colorSelected = document
